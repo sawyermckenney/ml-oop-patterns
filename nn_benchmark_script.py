@@ -89,7 +89,7 @@ def run_scaling_benchmark():
     
     batch_sizes = [2048, 4096, 8192, 16384, 32768, 65536]
 
-    print(f"{'Batch Size':<12} | {'JAX (s)':<15} | {'PyTorch (s)':<18}")
+    print(f"{'Batch Size'} | {'JAX (s)'} | {'PyTorch (s)'}")
     print("-" * 50)
 
     for size in batch_sizes:
@@ -114,6 +114,6 @@ def run_scaling_benchmark():
             jax_times.append(benchmark_jax_train(jax_model, x_jax, y_jax))
             torch_times.append(benchmark_torch_train(torch_model, x_torch, y_torch))      
 
-        print(f"{size:<12} | {np.mean(jax_times):.6f} | {np.mean(torch_times):.6f}")
+        print(f"{size} | {np.mean(jax_times)} | {np.mean(torch_times)}")
 
 run_scaling_benchmark()
