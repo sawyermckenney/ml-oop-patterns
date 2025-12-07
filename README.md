@@ -38,10 +38,11 @@ pip install equinox
 This can be run locally but you should have a system with a GPU. You can run this on Google Colab with a TPU for better results in a Jupyter Notebook.
 Run:
 ```bash
-python3 equinox_nn_example.py.py
+python3 equinox_nn_example.py
 ```
 
 ## Dependencies
 - Python 3.x
 - PyTorch
 - JAX
+- Equinox
