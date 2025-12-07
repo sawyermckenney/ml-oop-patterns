@@ -30,6 +30,17 @@ Run:
 python3 jax_mlp_example.py
 ```
 
+### **Equinox Version**     
+To install Equinox via pip, use the following command, depending on your Python version:
+```# Python 3.x 
+pip install equinox
+```
+This can be run locally but you should have a system with a GPU. You can run this on Google Colab with a TPU for better results in a Jupyter Notebook.
+Run:
+```bash
+python3 equinox_nn_example.py.py
+```
+
 ## Dependencies
 - Python 3.x
 - PyTorch
